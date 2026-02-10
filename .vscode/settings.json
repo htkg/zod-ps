@@ -1,0 +1,32 @@
+{
+  "python.analysis.extraPaths": [".venv/lib/python3.12"],
+  "python.analysis.typeCheckingMode": "basic",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "ruff.organizeImports": false,
+  "ruff.lineLength": 120,
+  "ruff.configuration": {
+    "unsafe-fixes": true,
+    "lint": {
+      "ignore": ["E741"],
+      "unfixable": ["F401", "F841"]
+    }
+  },
+  "isort.args": ["--profile", "black"],
+  "notebook.formatOnSave.enabled": true,
+  "notebook.codeActionsOnSave": {
+    "notebook.source.fixAll": "explicit",
+    "notebook.source.organizeImports": "explicit"
+  },
+  "[jsonc]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  }
+}

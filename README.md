@@ -33,7 +33,7 @@ Available Scripts
 - Collect $N$ samples with different methods
     - `baseline_lmc_loop.py`: ULA loop
     - `rgo_rs_loop.py`: RGO with Rejection Sampling for $N$ chains
-    - `zodps.py`: Zeroth Order Diffusion Proximal Sampler (ZOD-PS) with $N$ particles
+    - `zodps.py`: Zeroth-Order Diffusive Proximal Sampler (ZOD-PS) with $N$ particles
 - Ablation studies
     - `zodps_no_interaction.py`: ZOD-PS without interaction term (i.e. independent chains of $N=1$)
     - `zodps_shuffle.py`: ZOD-PS with replacing particles at each iteration, combined with the options below:
